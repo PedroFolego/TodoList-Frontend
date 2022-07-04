@@ -76,8 +76,8 @@ function App() {
               <td>{t.todo}</td>
               <td>{t.status}</td>
               <td>{t.criado}</td>
-              <button type="button" onClick={() => edithTodo(t.id, t.todo, t.status, t.criado)}>alterar</button>
-              <button type="button" onClick={() => removeTodo(t.id)}>remover</button>
+              <td><button type="button" onClick={() => edithTodo(t.id, t.todo, t.status, t.criado)}>alterar</button></td>
+              <td><button type="button" onClick={() => removeTodo(t.id)}>remover</button></td>
 
             </tr>
           ))}
@@ -105,7 +105,7 @@ function App() {
           />
         </label>
         <label htmlFor="criado">
-          <span>criado</span>
+          <span>Criado</span>
           <input
             type="text"
             name="criado"
